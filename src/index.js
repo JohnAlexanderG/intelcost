@@ -36,7 +36,7 @@ function App() {
     }
     
     function onClick() {
-        setQuery(refInput.currentTarget.value)
+        setQuery(refInput.current.value)
     }
 
     function clickSelect(event) {
