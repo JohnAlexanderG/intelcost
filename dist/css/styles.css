@@ -12,28 +12,53 @@ body {
 .search {
     background-color: #37474f;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
     height: 100px;
-    padding-right: 2rem;
-    font-size: 1.25rem;
+}
+
+@media screen and (min-width:420px) {
+    .search {
+        justify-content: flex-end;
+        padding-right: 1rem;
+    }
+}
+@media screen and (min-width:720px) {
+    .search {
+        padding-right: 2rem;
+    }
+}
+
+.search__input, .search__button, .search__select {
+    padding: 0.5rem;
 }
 
 .search__input {
-    padding: .5rem;
-    font-size: 1.25rem;
+    width: 125px;
+}
+
+@media screen and (min-width:420px) {
+    .search__input {
+        width: auto;
+    }
+}
+@media screen and (min-width:720px) {
+    .search__input, .search__button, .search__select {
+        font-size: 1.25rem;
+    }
+    .search__input {
+        width: 225px;
+    }
 }
 
 .search__button {
-    padding: 0.5rem;
-    font-size: 1.25rem;
-    margin-right: 0.5rem;
+    margin-right: 0.25rem
 }
 
-.search__select {
-    font-size: 1.25rem;
-    padding: 0.5rem;
-    
+@media screen and (min-width:720px) {
+    .search__button {
+        margin-right: 0.5rem;
+    }
 }
 
 .result {
